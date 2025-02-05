@@ -52,9 +52,9 @@ if (!pubspecFile.exists()) {
 def pubspecYaml = new Yaml().load(pubspecFile.newInputStream())
 ext.pspdfkitFlutterVersion = pubspecYaml.version
 
-ext.androidCompileSdkVersion = 31
+ext.androidCompileSdkVersion = 34
 ext.androidBuildToolsVersion = '30.0.3'
-ext.androidMinSdkVersion = 21
-ext.androidTargetSdkVersion = 30
+ext.androidMinSdkVersion = 26
+ext.androidTargetSdkVersion = 34
 ext.androidGradlePluginVersion = '7.1.1'
-ext.kotlinVersion = "1.5.31"
+ext.kotlinVersion = "1.7.10"

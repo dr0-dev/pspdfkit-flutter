@@ -143,14 +143,14 @@ internal class PSPDFKitView(
 
         fragmentContainerView?.let {
             it.addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener {
-                override fun onViewAttachedToWindow(view: View?) {
+                override fun onViewAttachedToWindow(view: View) {
                     getFragmentActivity(context).supportFragmentManager.commit {
                         add(it.id, pdfUiFragment)
                         setReorderingAllowed(true)
                     }
                 }
 
-                override fun onViewDetachedFromWindow(view: View?) {
+                override fun onViewDetachedFromWindow(view: View) {
                     getFragmentActivity(context).supportFragmentManager.commit {
                         remove(pdfUiFragment)
                         setReorderingAllowed(true)

@@ -10,11 +10,12 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    namespace 'com.pspdfkit.flutter.example'
     compileSdkVersion androidCompileSdkVersion
     
     compileOptions {
-      sourceCompatibility 1.8
-      targetCompatibility 1.8
+      sourceCompatibility 17
+      targetCompatibility 17
     }
 
     lintOptions {

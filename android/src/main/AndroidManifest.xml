@@ -15,9 +15,11 @@
     <application android:largeHeap="true">
         <activity
             android:name=".FlutterPdfActivity"
-            android:windowSoftInputMode="adjustNothing" />
+            android:windowSoftInputMode="adjustNothing"
+            android:exported="true"/>
         <activity
             android:name=".WatermarkActivity"
-            android:windowSoftInputMode="adjustNothing" />
+            android:windowSoftInputMode="adjustNothing"
+            android:exported="true"/>
     </application>
 </manifest>
